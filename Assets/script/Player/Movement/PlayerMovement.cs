@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
 
     public float groundDrag;
 
+    
+
     [Header("Ground Check")]
     public float playerHeight;
     public LayerMask whatIsGround;
@@ -63,6 +65,7 @@ public class PlayerMovement : MonoBehaviour
 
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
 
+        
     }
 
     private void SpeedControle()
@@ -76,4 +79,7 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
         }
     }
+    
+
+
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class KeepScore : MonoBehaviour
 {
@@ -24,8 +25,13 @@ public class KeepScore : MonoBehaviour
         scoreField.text = points.Length.ToString();
         if (points.Length > 0)
         {
-            
+            YouWin();
         }
+    }
+
+    void YouWin()
+    {
+        
     }
 
     public void AddScore(int scoreScript)
