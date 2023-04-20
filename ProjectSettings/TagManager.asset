@@ -13,10 +13,10 @@ TagManager:
   - Background
   - Water
   - UI
+  - Player
   - 
   - 
-  - 
-  - 
+  - MiniMap
   - whatIsGround
   - whatIsPlayer
   - 

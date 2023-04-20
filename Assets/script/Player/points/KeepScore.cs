@@ -10,6 +10,8 @@ public class KeepScore : MonoBehaviour
     private TMP_Text scoreField;
     private int score = 0;
 
+    public GameObject WinScreen;
+
     void Start()
     {
         scoreField = GetComponent<TMP_Text>();
@@ -23,7 +25,7 @@ public class KeepScore : MonoBehaviour
         GameObject[] points = 
             GameObject.FindGameObjectsWithTag("Points");
         scoreField.text = points.Length.ToString();
-        if (points.Length > 0)
+        if (points.Length == 0)
         {
             YouWin();
         }
@@ -31,7 +33,8 @@ public class KeepScore : MonoBehaviour
 
     void YouWin()
     {
-        
+        Time.timeScale = 0f;
+        WinScreen.SetActive(true);
     }
 
     public void AddScore(int scoreScript)

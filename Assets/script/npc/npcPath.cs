@@ -7,9 +7,9 @@ public class npcPath : MonoBehaviour
 {
     public NavMeshAgent Enemy;
     public Transform target;
-    public float followRadius = 5f;
-    public float wanderRadius = 10f;
-    public float wanderTimer = 5f;
+    public float followRadius ;
+    public float wanderRadius ;
+    public float wanderTimer ;
 
     private Vector3 startingPosition;
     private float timer;
@@ -19,7 +19,7 @@ public class npcPath : MonoBehaviour
     {
         startingPosition = transform.position;
         timer = wanderTimer;
-        Enemy.speed = 3f;
+        Enemy.speed = 10f;
     }
 
     // Update is called once per frame
