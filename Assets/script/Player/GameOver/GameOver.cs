@@ -9,12 +9,14 @@ public class GameOver : MonoBehaviour
     void Start()
     {
         
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-       
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     public void RetryGame()

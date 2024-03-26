@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -32,6 +33,14 @@ public class PauseMenu : MonoBehaviour
                 Pause();
             }
         }
+        else
+        {
+            if (GameisPaused == false)
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+            }
+        }
     }
 
     public void Resume()
@@ -39,6 +48,13 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameisPaused = false;
+    }
+
+    public void Option()
+    {
+        pauseMenuUI.SetActive(true);
+        Time.timeScale = 0f;
+        GameisPaused = true;
     }
 
     void Pause()

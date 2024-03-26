@@ -13,11 +13,11 @@ public class Getpickup : MonoBehaviour
     void Start()
     {
         aScorce = GetComponent<AudioSource>(); // get component once @ Start more efficient.
-        scoreScript = FindObjectOfType<KeepScore>();
+        scoreScript = FindAnyObjectByType<KeepScore>();
     }
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Trigger");
+        Debug.Log("+1");
         if (other.tag == "Player")
         {
             Destroy(gameObject, 0.5f);
