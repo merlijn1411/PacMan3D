@@ -1,18 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         Cursor.lockState = CursorLockMode.None;
@@ -25,8 +15,6 @@ public class GameOver : MonoBehaviour
         Debug.Log("Loading Game...");
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        print("Error Button doesn't work");
-        
     }
     public void LoadMenu()
     {

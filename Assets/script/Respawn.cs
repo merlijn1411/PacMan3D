@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Respawn : MonoBehaviour
@@ -7,10 +6,7 @@ public class Respawn : MonoBehaviour
     public bool teleported = false;
 
     public Respawn destination;
-
-
-
-
+    
 
     void OnTriggerEnter(Collider c)
     {
@@ -18,11 +14,7 @@ public class Respawn : MonoBehaviour
         {
             if (!teleported)
             {
-
-
                 StartCoroutine(Teleport(c.gameObject));
-
-
             }
         }
     }
