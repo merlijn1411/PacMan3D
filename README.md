@@ -1,6 +1,7 @@
-# This is my 3D Pacman Game!
+# <header>This is my 3D Pacman Game!</header>
 
-To find the rules for this project go to the <kbd><br> [Wiki][Link] <br></kbd>
 
-[Link]: # 'https://github.com/merlijn1411/PacMan3D/wiki'
-
+<div align="left">
+<text>To find the rules for this project go to the </text>
+<a href="https://github.com/merlijn1411/PacMan3D/wiki" class="button">Wiki</a>
+</div>
