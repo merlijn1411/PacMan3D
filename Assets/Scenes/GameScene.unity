@@ -19487,7 +19487,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 650724305}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.37, y: 0.27, z: 92.82}
+  m_LocalPosition: {x: -0.37, y: 0.5, z: 92.82}
   m_LocalScale: {x: 2.954546, y: 0.2367425, z: 11.10796}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19506,7 +19506,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9016b0e4dcf78f247ba0c40e7855e7ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleported: 1
   destination: {fileID: 1350074394}
 --- !u!65 &650724308
 BoxCollider:
@@ -39936,7 +39935,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1350074392}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.37, y: 0.27, z: -92.87}
+  m_LocalPosition: {x: -0.37, y: 0.5, z: -92.87}
   m_LocalScale: {x: 2.9545462, y: 0.2367425, z: 11.107958}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -39955,7 +39954,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9016b0e4dcf78f247ba0c40e7855e7ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleported: 1
   destination: {fileID: 650724307}
 --- !u!65 &1350074395
 BoxCollider:
