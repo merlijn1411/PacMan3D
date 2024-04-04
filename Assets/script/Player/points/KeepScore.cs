@@ -1,18 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class KeepScore : MonoBehaviour
 {
-    //deze moet in de canvas: score 
     private TMP_Text scoreField;
     private int score = 0;
 
-    public GameObject WinScreen;
+    [SerializeField] private GameObject WinScreen;
 
-    void Start()
+    private void Start()
     {
         scoreField = GetComponent<TMP_Text>();
         score = 0;  
@@ -20,10 +16,9 @@ public class KeepScore : MonoBehaviour
         
     }
 
-    void Update()
+    private void Update()
     {
-        GameObject[] points = 
-            GameObject.FindGameObjectsWithTag("Points");
+        GameObject[] points = GameObject.FindGameObjectsWithTag("Points");
         scoreField.text = points.Length.ToString();
         if (points.Length == 0)
         {

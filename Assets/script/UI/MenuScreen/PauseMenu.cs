@@ -1,26 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
 public class PauseMenu : MonoBehaviour
 {
-    public static bool GameisPaused = false;
-    public GameObject pauseMenuUI;
-    void Start() 
+    private static bool _gameIsPaused = false;
+    [SerializeField] private GameObject pauseMenuUI;
+    private void Start() 
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         Resume();
     }
 
-    void Update()
+    private void Update()
     {
         if (Input.GetKeyUp(KeyCode.Escape))
         {
-            if (GameisPaused) 
+            if (_gameIsPaused) 
             {
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
@@ -35,7 +32,7 @@ public class PauseMenu : MonoBehaviour
         }
         else
         {
-            if (GameisPaused == false)
+            if (_gameIsPaused == false)
             {
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
@@ -47,21 +44,21 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
-        GameisPaused = false;
+        _gameIsPaused = false;
     }
 
     public void Option()
     {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
-        GameisPaused = true;
+        _gameIsPaused = true;
     }
 
     void Pause()
     {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
-        GameisPaused = true;
+        _gameIsPaused = true;
     }
 
     public void LoadMenu()

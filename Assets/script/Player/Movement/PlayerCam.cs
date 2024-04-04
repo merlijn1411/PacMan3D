@@ -1,17 +1,15 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerCam: MonoBehaviour
 {
-    public float sensX;
-    public float sensY;
+    [SerializeField] private float sensX;
+    [SerializeField] private float sensY;
 
-    public Transform orientation;
+    [SerializeField] private Transform orientation;
 
-    float xrotation;
-    float yrotation;
+    [SerializeField] private float xrotation;
+    [SerializeField] private float yrotation;
 
     private void Start()
     {
@@ -28,9 +26,7 @@ public class PlayerCam: MonoBehaviour
         xrotation -= mouseY;
 
         xrotation = Math.Clamp(xrotation, -90f, 90f);
-
-
-        //for orientation and rotate cam 
+        
         transform.rotation = Quaternion.Euler(xrotation, yrotation, 0);
         orientation.rotation = Quaternion.Euler(0, yrotation, 0);   
     }   

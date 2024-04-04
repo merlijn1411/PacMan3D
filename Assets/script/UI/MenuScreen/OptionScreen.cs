@@ -7,12 +7,12 @@ using UnityEngine.UI;
 
 public class OptionScreen : MonoBehaviour
 {
-    public AudioMixer TheMixer;
+    [SerializeField] private AudioMixer TheMixer;
 
-    public TMP_Text mastLabel, musicLabel, sfxLabel;
-    public Slider mastSlider, musicSlider, sfxSlider;
+    [SerializeField] private TMP_Text mastLabel, musicLabel, sfxLabel;
+    [SerializeField] private Slider mastSlider, musicSlider, sfxSlider;
     
-    void Start()
+    private void Start()
     {
         float vol = 0f;
         TheMixer.GetFloat("MasterVol", out vol);
@@ -26,12 +26,6 @@ public class OptionScreen : MonoBehaviour
         mastLabel.text = Mathf.RoundToInt(mastSlider.value + 80).ToString();
         musicLabel.text = Mathf.RoundToInt(musicSlider.value + 80).ToString();
         sfxLabel.text = Mathf.RoundToInt(sfxSlider.value + 80).ToString();
-    }
-
-   
-    void Update()
-    {
-        
     }
 
     public void SetMastVol()
