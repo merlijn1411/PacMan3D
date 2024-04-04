@@ -1,51 +1,47 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement")]
-    public float moveSpeed;
-
-    public float groundDrag;
+    [SerializeField] private float moveSpeed;
+    [SerializeField] private float groundDrag;
 
     
 
     [Header("Ground Check")]
-    public float playerHeight;
-    public LayerMask whatIsGround;
-    bool grounded;
+    [SerializeField] private float playerHeight;
+    [SerializeField] private LayerMask whatIsGround;
+    private bool _isGrounded;
 
-    public Transform orientation;
+    [SerializeField] private Transform orientation;
 
-    float horizontalInput;
-    float verticalInput;
+    private float _horizontalInput;
+    private float _verticalInput;
 
-    Vector3 moveDirection;
+    private Vector3 _moveDirection;
 
-    Rigidbody rb;
+    private Rigidbody _rb;
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        rb.freezeRotation= true;
+        _rb = GetComponent<Rigidbody>();
+        _rb.freezeRotation= true;
     }
 
 
     private void Update()
     {
         //ground check
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
+        _isGrounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
 
         MyInput();
-        SpeedControle();
+        SpeedControl();
 
         // handle drag 
-        if (grounded)
-            rb.drag = groundDrag;
+        if (_isGrounded)
+            _rb.drag = groundDrag;
         else
-            rb.drag = 0;
+            _rb.drag = 0;
     }
 
     private void FixedUpdate()
@@ -54,29 +50,30 @@ public class PlayerMovement : MonoBehaviour
     }
     private void MyInput()
     {
-        horizontalInput = Input.GetAxisRaw("Horizontal");
-        verticalInput = Input.GetAxisRaw("Vertical");
+        _horizontalInput = Input.GetAxisRaw("Horizontal");
+        _verticalInput = Input.GetAxisRaw("Vertical");
     }
 
     private void MovePlayer()
     {
         //calculeert de beweging directie
-        moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+        _moveDirection = orientation.forward * _verticalInput + orientation.right * _horizontalInput;
 
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+            _rb.AddForce(_moveDirection.normalized * (moveSpeed * 10f), ForceMode.Force);
 
         
     }
 
-    private void SpeedControle()
+    private void SpeedControl()
     {
-        Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+        var velocity = _rb.velocity;
+        Vector3 flatVel = new Vector3(velocity.x, 0f, velocity.z);
 
         //limiet van velocity als we dat nodig hebben 
         if(flatVel.magnitude > moveSpeed)
         {
             Vector3 limitedVel = flatVel.normalized * moveSpeed;
-            rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
+            _rb.velocity = new Vector3(limitedVel.x, _rb.velocity.y, limitedVel.z);
         }
     }
     

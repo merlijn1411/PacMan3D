@@ -6,9 +6,9 @@ public class KeepScore : MonoBehaviour
     private TMP_Text scoreField;
     private int score = 0;
 
-    public GameObject WinScreen;
+    [SerializeField] private GameObject WinScreen;
 
-    void Start()
+    private void Start()
     {
         scoreField = GetComponent<TMP_Text>();
         score = 0;  
@@ -16,7 +16,7 @@ public class KeepScore : MonoBehaviour
         
     }
 
-    void Update()
+    private void Update()
     {
         GameObject[] points = GameObject.FindGameObjectsWithTag("Points");
         scoreField.text = points.Length.ToString();

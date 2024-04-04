@@ -1,34 +1,35 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class UiPageManager : MonoBehaviour
 {
-    public GameObject[] pages; 
+    [SerializeField] private GameObject[] _pages; 
     private int _currentPageIndex = 1; 
 
-    void Start()
+    private void Start()
     {
-        for (int i = 1; i < pages.Length; i++)
+        for (int i = 1; i < _pages.Length; i++)
         {
-            pages[i].SetActive(false);
+            _pages[i].SetActive(false);
         }
     }
 
     public void NextPage()
     {
-        pages[_currentPageIndex].SetActive(false);
+        _pages[_currentPageIndex].SetActive(false);
 
-        _currentPageIndex = (_currentPageIndex + 1) % pages.Length;
+        _currentPageIndex = (_currentPageIndex + 1) % _pages.Length;
 
-        pages[_currentPageIndex].SetActive(true);
+        _pages[_currentPageIndex].SetActive(true);
     }
 
     public void PreviousPage()
     {
-       pages[_currentPageIndex].SetActive(false);
+       _pages[_currentPageIndex].SetActive(false);
 
-       _currentPageIndex = (_currentPageIndex - 1 + pages.Length) % pages.Length;
+       _currentPageIndex = (_currentPageIndex - 1 + _pages.Length) % _pages.Length;
 
-       pages[_currentPageIndex].SetActive(true);
+       _pages[_currentPageIndex].SetActive(true);
     }
 
     public void StartGame()

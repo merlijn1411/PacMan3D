@@ -170,6 +170,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &496303
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -387,6 +389,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &4925958
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1234,6 +1238,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &31823607
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1451,6 +1457,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &44255557
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1773,6 +1781,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &57333969
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2184,8 +2194,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 484, y: -238}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 399.59, y: -225}
+  m_SizeDelta: {x: 799.19, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &85422453
 GameObject:
@@ -2237,6 +2247,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &85422456
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2559,6 +2571,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &91219319
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3121,6 +3135,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &109737689
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3338,6 +3354,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &113286976
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3555,6 +3573,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &119796915
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3982,6 +4002,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &134464838
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4498,9 +4520,9 @@ RectTransform:
   m_Father: {fileID: 76148016}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -303, y: 179}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 189, y: -66}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &175202857
@@ -4586,7 +4608,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 128.00644, w: 0}
+  m_margin: {x: 0, y: 0, z: 106.14311, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4663,6 +4685,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &175509042
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4880,6 +4904,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &187751364
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5622,6 +5648,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &204350744
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5839,6 +5867,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &206658281
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6581,6 +6611,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &233117414
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6903,6 +6935,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &238822113
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7330,6 +7364,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &267902128
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7682,6 +7718,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &270956177
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8004,6 +8042,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &275427297
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8221,6 +8261,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &282399412
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8543,6 +8585,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &291347411
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8760,6 +8804,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &291709572
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9397,6 +9443,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &316501844
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9614,6 +9662,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &322956346
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9831,6 +9881,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &330988307
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10153,6 +10205,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &345038752
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10475,6 +10529,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &348695008
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10797,6 +10853,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &373074702
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10981,7 +11039,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &379895697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11555,6 +11613,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &396324650
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11772,6 +11832,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &403515496
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11989,6 +12051,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &404726770
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12206,6 +12270,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &414379683
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12473,8 +12539,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -960.41, y: -540}
-  m_SizeDelta: {x: 1919.2, y: 1080}
+  m_AnchoredPosition: {x: -400.41, y: -225}
+  m_SizeDelta: {x: 799.2, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &427548638
 GameObject:
@@ -12841,6 +12907,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &435818421
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13058,6 +13126,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &444526502
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13275,6 +13345,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &448877215
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13597,6 +13669,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &449761786
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13848,9 +13922,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameOver, Assembly-CSharp
-        m_MethodName: RetryGame
+      - m_Target: {fileID: 562040263}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: LoadMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14053,6 +14127,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &465904847
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14375,6 +14451,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &494453765
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14592,6 +14670,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &500688959
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15124,6 +15204,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &511573313
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15446,6 +15528,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &528492580
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15768,6 +15852,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &550332043
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16744,6 +16830,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &610094196
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16961,6 +17049,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &612362707
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -17523,6 +17613,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &619019866
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -17740,6 +17832,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &620105657
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -18200,6 +18294,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &638252266
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -18417,6 +18513,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &638258386
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -18634,6 +18732,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &639745114
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -18956,6 +19056,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &646237934
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -19278,6 +19380,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &647619854
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -19562,6 +19666,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &651295810
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -19884,6 +19990,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &668581243
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -20101,6 +20209,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &671655507
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -20496,6 +20606,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &685678845
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -20713,6 +20825,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &692908687
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -20930,6 +21044,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &697136501
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -21147,6 +21263,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &702909984
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -21469,6 +21587,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &715906076
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -21796,6 +21916,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &728623658
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -22013,6 +22135,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &736644416
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -23010,6 +23134,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &765178499
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -23437,6 +23563,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &785946206
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -23759,6 +23887,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &799809987
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -23981,6 +24111,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &837135239
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -24513,6 +24645,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &849647222
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -24835,6 +24969,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &856229437
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -25052,6 +25188,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &857492578
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -25374,6 +25512,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &872383504
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -25906,6 +26046,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &900903493
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -26191,6 +26333,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &911137500
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -26408,6 +26552,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &921044182
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -26625,6 +26771,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &925508074
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -26842,6 +26990,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &928629081
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -27059,6 +27209,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &932994736
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -27539,6 +27691,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &955307322
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -27756,6 +27910,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &956065378
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -27973,6 +28129,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &961369495
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -28400,6 +28558,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &986043501
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -28617,6 +28777,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &986418278
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -28939,6 +29101,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &995922342
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -29261,6 +29425,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1010699321
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -29478,6 +29644,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1014888942
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -29695,6 +29863,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1015523161
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -29912,6 +30082,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1016182260
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -30743,6 +30915,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1048103089
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -30960,6 +31134,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1049409157
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -31311,6 +31487,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1052672848
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -31633,6 +31811,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1056953379
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -32165,6 +32345,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1077239306
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -32487,6 +32669,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1098179810
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -32704,6 +32888,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1098775283
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -33131,6 +33317,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1110564196
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -33877,6 +34065,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1146606550
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -34079,8 +34269,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -560.41, y: -315}
-  m_SizeDelta: {x: 1919.2, y: 1080}
+  m_AnchoredPosition: {x: -0.40503, y: -0.000030518}
+  m_SizeDelta: {x: 799.19, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1153349674
 GameObject:
@@ -34132,6 +34322,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1153349677
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -34454,6 +34646,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1163043329
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -34671,6 +34865,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1163379561
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -35878,6 +36074,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1227615665
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -36200,6 +36398,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1237254626
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -36417,6 +36617,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1255247454
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -36634,6 +36836,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1261362377
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -36851,6 +37055,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1265366715
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -37278,6 +37484,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1278487231
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -38230,6 +38438,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1321801620
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -38552,6 +38762,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1330132053
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -38769,6 +38981,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1334679601
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -38986,6 +39200,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1335176477
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -39548,6 +39764,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1342048175
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -39765,6 +39983,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1347758730
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -40154,6 +40374,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1356040704
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -40622,6 +40844,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1375392777
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -40839,6 +41063,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1379366263
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -41161,6 +41387,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1393211230
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -41378,6 +41606,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1394459330
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -41700,6 +41930,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1398074296
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -41917,6 +42149,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1401046849
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -42168,8 +42402,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameOver, Assembly-CSharp
+      - m_Target: {fileID: 562040263}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: LoadMenu
         m_Mode: 1
         m_Arguments:
@@ -42268,6 +42502,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1416704952
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -42485,6 +42721,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1446240415
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -42702,6 +42940,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1469453998
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -42919,6 +43159,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1472636232
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -43241,6 +43483,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1475252544
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -43458,6 +43702,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1475610196
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -43675,6 +43921,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1486332343
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -43997,6 +44245,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1488795914
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -44214,6 +44464,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1491589065
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -44536,6 +44788,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1500638999
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -44753,6 +45007,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1502381020
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -45203,6 +45459,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1511987820
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -45735,6 +45993,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1551492770
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -45952,6 +46212,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1562308987
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -46169,6 +46431,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1565280406
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -46491,6 +46755,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1567634477
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -46708,6 +46974,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1571860216
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -47240,6 +47508,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1591152762
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -47457,6 +47727,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1595524904
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -47789,6 +48061,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1604841631
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -48456,6 +48730,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1613263086
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -48746,6 +49022,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1623648741
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -49327,6 +49605,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1644265265
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -49754,6 +50034,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1655913048
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -49971,6 +50253,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1657159523
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -50398,6 +50682,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1668344763
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -50825,6 +51111,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1676442194
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -51147,6 +51435,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1690556960
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -51364,6 +51654,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1693320645
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -51581,6 +51873,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1699056122
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -51903,6 +52197,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1705728793
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -52779,6 +53075,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1747921096
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -52996,6 +53294,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1748866996
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -53213,6 +53513,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1752266753
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -53430,6 +53732,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1756926910
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -53647,6 +53951,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1769610319
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -53969,6 +54275,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1785496987
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -54186,6 +54494,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1787821679
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -54613,6 +54923,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1796332322
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -54970,6 +55282,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1814345904
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -55187,6 +55501,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1818136862
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -55404,6 +55720,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1820976146
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -55726,6 +56044,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1828552831
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -55943,6 +56263,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1831194209
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -56160,6 +56482,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1831986549
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -56482,6 +56806,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1842174905
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -56804,6 +57130,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1849625077
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -57395,6 +57723,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1869625625
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -58064,6 +58394,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1894350886
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -58386,6 +58718,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1898959786
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -59325,6 +59659,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1924995476
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -59647,6 +59983,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1929118442
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -59864,6 +60202,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1931735428
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -60263,6 +60603,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1972573742
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -60480,6 +60822,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1973621612
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -60697,6 +61041,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1975111628
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -60914,6 +61260,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1978394378
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -61236,6 +61584,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1982438888
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -61558,6 +61908,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &1988097179
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -62046,6 +62398,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &2010604751
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -62263,6 +62617,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &2015803670
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -62585,6 +62941,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &2019731949
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -63012,6 +63370,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &2048803988
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -63229,6 +63589,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &2054371803
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -63656,6 +64018,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &2065654444
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -64083,6 +64447,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &2072232676
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -64510,6 +64876,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &2074278243
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -64727,6 +65095,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &2080116435
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -65049,6 +65419,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &2086069940
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -65266,6 +65638,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &2086295312
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -65722,6 +66096,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &2095864308
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -66044,6 +66420,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &2100990220
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -66261,6 +66639,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &2108730928
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -66583,6 +66963,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &2115037469
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -67250,6 +67632,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &2138769441
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -67467,6 +67851,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &2139148052
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -67827,6 +68213,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 8300000, guid: 8fb2e84339467c742aec83e66e8547b6, type: 3}
+  aScorce: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!135 &2143213281
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -68053,6 +68441,10 @@ PrefabInstance:
     - target: {fileID: 5172840086546995884, guid: c266b38e9ac26ab4ca6b9f476b5b6190, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764240760840093583, guid: c266b38e9ac26ab4ca6b9f476b5b6190, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

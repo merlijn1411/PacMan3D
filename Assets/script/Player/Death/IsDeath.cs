@@ -1,24 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class IsDeath : MonoBehaviour
 {
-    public static bool GameisPaused = false;
-    public GameObject EndScreen;
+    private static bool GameisPaused = false;
+    [SerializeField] private GameObject EndScreen;
 
-    void Start()
+    private void Start()
     {
         EndScreen.SetActive(false);
     }
 
-    void Update()
-    {
-        
-    }
-
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Ghost")
         {

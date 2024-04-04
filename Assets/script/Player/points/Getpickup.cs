@@ -1,18 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Audio;
 
 public class Getpickup : MonoBehaviour
 {
-    //deze code is voor de coin
-    public AudioClip coin;
-    AudioSource aScorce;
-    GameObject obj;
+    [SerializeField] private AudioClip coin;
+    [SerializeField] private AudioSource aScorce;
+    [SerializeField] private GameObject obj;
     private KeepScore scoreScript;
     void Start()
     {
-        aScorce = GetComponent<AudioSource>(); // get component once @ Start more efficient.
+        aScorce = GetComponent<AudioSource>(); 
         scoreScript = FindAnyObjectByType<KeepScore>();
     }
     void OnTriggerEnter(Collider other)

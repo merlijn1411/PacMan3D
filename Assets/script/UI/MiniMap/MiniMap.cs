@@ -5,10 +5,10 @@ using UnityEngine.UIElements;
 
 public class MiniMap : MonoBehaviour
 {
-    public Transform Player;
-    public GameObject MiniMapSize;
+    [SerializeField] private Transform Player;
+    [SerializeField] private GameObject MiniMapSize;
 
-    public void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Tab))
         {
@@ -20,7 +20,7 @@ public class MiniMap : MonoBehaviour
         }
     }
 
-    void LateUpdate()
+    private void LateUpdate()
     {
         Vector3 newPosition = Player.position;
         newPosition.y = transform.position.y;
