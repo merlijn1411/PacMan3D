@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 4229403744194341999}
   - component: {fileID: 4229403744194341998}
   - component: {fileID: 4229403744194341996}
-  - component: {fileID: 4229403744194341987}
   - component: {fileID: 4229403744194341986}
   - component: {fileID: 4229403744194341993}
+  - component: {fileID: 8567615289602176346}
   m_Layer: 0
   m_Name: PacMan
   m_TagString: Player
@@ -141,19 +141,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 0
   m_Center: {x: 0, y: 0, z: 0.03517607}
---- !u!114 &4229403744194341987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4229403744194341984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d2d1d4429e575345af8fd20386a4569, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EndScreen: {fileID: 0}
 --- !u!114 &4229403744194341986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,6 +183,21 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8567615289602176346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4229403744194341984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d2d1d4429e575345af8fd20386a4569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasNoLves:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &4229403744422018541
 GameObject:
   m_ObjectHideFlags: 0
@@ -594,6 +596,8 @@ MonoBehaviour:
   sensX: 400
   sensY: 400
   orientation: {fileID: 4229403744720405799}
+  xrotation: 0
+  yrotation: 0
 --- !u!114 &1026113909246022830
 MonoBehaviour:
   m_ObjectHideFlags: 0

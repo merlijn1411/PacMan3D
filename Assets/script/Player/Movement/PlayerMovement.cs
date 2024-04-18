@@ -56,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void MovePlayer()
     {
-        //calculeert de beweging directie
+        
         _moveDirection = orientation.forward * _verticalInput + orientation.right * _horizontalInput;
 
             _rb.AddForce(_moveDirection.normalized * (moveSpeed * 10f), ForceMode.Force);
@@ -68,8 +68,7 @@ public class PlayerMovement : MonoBehaviour
     {
         var velocity = _rb.velocity;
         Vector3 flatVel = new Vector3(velocity.x, 0f, velocity.z);
-
-        //limiet van velocity als we dat nodig hebben 
+        
         if(flatVel.magnitude > moveSpeed)
         {
             Vector3 limitedVel = flatVel.normalized * moveSpeed;
