@@ -11,12 +11,20 @@ public class PrestationChecker : MonoBehaviour
         Time.timeScale = 0f;
         prestationScreen.SetActive(true);
         prestationText.text = $"You win";
+        CursonSwitch();
     }
 
     public void Loose()
     {
         Time.timeScale = 0f;
         prestationScreen.SetActive(true);
-        prestationText.text = $"You Losed";
+        prestationText.text = $"You Loose";
+        CursonSwitch();
+    }
+
+    private void CursonSwitch()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }

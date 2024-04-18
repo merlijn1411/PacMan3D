@@ -31,13 +31,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        //ground check
         _isGrounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
 
         MyInput();
         SpeedControl();
-
-        // handle drag 
+        
         if (_isGrounded)
             _rb.drag = groundDrag;
         else
