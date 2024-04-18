@@ -1,28 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class MiniMap : MonoBehaviour
 {
-    [SerializeField] private Transform Player;
-    [SerializeField] private GameObject MiniMapSize;
+    [SerializeField] private Transform player;
+    [SerializeField] private GameObject miniMapSize;
 
     private void Update()
     {
+        MapSizeController();
+    }
+
+    private void MapSizeController()
+    {
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            MiniMapSize.SetActive(true);
-        }
-        if(Input.GetKeyUp(KeyCode.Tab)) 
-        {
-            MiniMapSize.SetActive(false);
+            miniMapSize.SetActive(!miniMapSize.activeSelf);
         }
     }
 
     private void LateUpdate()
     {
-        Vector3 newPosition = Player.position;
+        Vector3 newPosition = player.position;
         newPosition.y = transform.position.y;
         transform.position = newPosition;
     }
