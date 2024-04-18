@@ -1,41 +1,26 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
+
 
 public class KeepScore : MonoBehaviour
 {
-    private TMP_Text scoreField;
-    private int score = 0;
+    [SerializeField] private TMP_Text scoreField;
 
-    [SerializeField] private GameObject WinScreen;
-
-    private void Start()
-    {
-        scoreField = GetComponent<TMP_Text>();
-        score = 0;  
-        scoreField.text = "" + score;
-        
-    }
+    public UnityEvent hasAllPoints;
 
     private void Update()
     {
         GameObject[] points = GameObject.FindGameObjectsWithTag("Points");
         scoreField.text = points.Length.ToString();
+        PointsLeft(points);
+    }
+
+    private void PointsLeft(GameObject[] points)
+    {
         if (points.Length == 0)
         {
-            YouWin();
+            hasAllPoints.Invoke();
         }
-    }
-
-    void YouWin()
-    {
-        Time.timeScale = 0f;
-        WinScreen.SetActive(true);
-    }
-
-    public void AddScore(int scoreScript)
-    {
-        score += scoreScript;
-        scoreField.text = "" + score;
-        
     }
 }

@@ -3,24 +3,37 @@ using UnityEngine.SceneManagement;
 
 public class ButtonFunctionContainer : MonoBehaviour
 {
-    [SerializeField] private GameObject PausePage;
+    [SerializeField] private GameObject pausePage;
+    [SerializeField] private GameObject nonDiegetic;
     
     public void Resume()
     {
-        PausePage.SetActive(false);
+        pausePage.SetActive(false);
+        nonDiegetic.SetActive(true);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         Time.timeScale = 1f;
     }
 
     public void Option()
     {
-        PausePage.SetActive(true);
+        pausePage.SetActive(true);
         Time.timeScale = 0f;
     }
 
     public void Pause()
     {
-        PausePage.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        pausePage.SetActive(true);
+        nonDiegetic.SetActive(false);
         Time.timeScale = 0f;
+    }
+
+    public void LoadGame()
+    {
+        SceneManager.LoadScene("GameScene");
+        Debug.Log("Loading Game...");
     }
 
     public void LoadMenu()

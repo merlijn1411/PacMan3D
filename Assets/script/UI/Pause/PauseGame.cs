@@ -29,15 +29,11 @@ public class PauseGame : MonoBehaviour
     {
         if (_isGamePaused) 
         {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
             buttonFunctionContainer.Resume();
             _isGamePaused = false;
         }
         else
         {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
             buttonFunctionContainer.Pause();
             _isGamePaused = true;
         }
