@@ -2,9 +2,9 @@ using UnityEngine;
 using UnityEngine.Serialization;
 
 
-public class PauseGame : MonoBehaviour
+public class PauseController : MonoBehaviour
 {
-    private bool _isGamePaused = false;
+    public bool isGamePaused = false;
 
     [SerializeField] private ButtonFunctionContainer buttonFunctionContainer;
     private void Start() 
@@ -16,10 +16,10 @@ public class PauseGame : MonoBehaviour
 
     private void Update()
     {
-        PauseController();
+        PauseControl();
     }
 
-    private void PauseController()
+    private void PauseControl()
     {
         if (Input.GetKeyUp(KeyCode.Escape))
             PauseChecker();
@@ -27,15 +27,11 @@ public class PauseGame : MonoBehaviour
 
     private void PauseChecker()
     {
-        if (_isGamePaused) 
-        {
+        isGamePaused = !isGamePaused;
+        if (!isGamePaused) 
             buttonFunctionContainer.Resume();
-            _isGamePaused = false;
-        }
-        else
-        {
+        else if (isGamePaused)
             buttonFunctionContainer.Pause();
-            _isGamePaused = true;
-        }
+        
     }
 }

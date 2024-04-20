@@ -1,10 +1,13 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class ButtonFunctionContainer : MonoBehaviour
 {
     [SerializeField] private GameObject pausePage;
     [SerializeField] private GameObject nonDiegetic;
+
+    [SerializeField] private PauseController pauseController;
     
     public void Resume()
     {
@@ -13,12 +16,7 @@ public class ButtonFunctionContainer : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         Time.timeScale = 1f;
-    }
-
-    public void Option()
-    {
-        pausePage.SetActive(true);
-        Time.timeScale = 0f;
+        pauseController.isGamePaused = false;
     }
 
     public void Pause()
@@ -28,6 +26,7 @@ public class ButtonFunctionContainer : MonoBehaviour
         pausePage.SetActive(true);
         nonDiegetic.SetActive(false);
         Time.timeScale = 0f;
+        pauseController.isGamePaused = true;
     }
 
     public void LoadGame()
