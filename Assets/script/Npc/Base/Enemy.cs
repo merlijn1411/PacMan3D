@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -12,6 +9,9 @@ public class Enemy : MonoBehaviour, IThouchable, IEnemyMoveable
     public EnemyStateMachine StateMachine { get; set; }
     public EnemyWalkState WalkState { get; set; }
     public EnemyChaseState ChaseState { get; set; }
+
+    public float RandomMovememtSpeed = 1f;
+    public float RandomMovementRange = 5f;
 
     private void Awake()
     {
@@ -51,25 +51,18 @@ public class Enemy : MonoBehaviour, IThouchable, IEnemyMoveable
     
     public void MoveEnemy(Vector3 velocity)
     {
+        velocity.y = 1.37f;
         RB.velocity = velocity;
-        CheckForLeftOrRightFacing(velocity);
+        ModelFaceRotator(velocity);
     }
 
-    public void CheckForLeftOrRightFacing(Vector3 velocity)
+    public void ModelFaceRotator(Vector3 velocity)
     {
-        if (IsFacingRight && velocity.x < 0f)
+        if (velocity != Vector3.zero)
         {
-            var rotator = new Vector3(transform.rotation.x, 180f, transform.rotation.z);
-            transform.rotation = quaternion.Euler(rotator);
-            IsFacingRight = !IsFacingRight;
+            Quaternion targetRotation = Quaternion.LookRotation(new Vector3(velocity.x, 0f, velocity.z));
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 10f);
         }
-        else if (!IsFacingRight && velocity.x > 0f)
-        {
-            var rotator = new Vector3(transform.rotation.x, 0f, transform.rotation.z);
-            transform.rotation = quaternion.Euler(rotator);
-            IsFacingRight = !IsFacingRight;
-        }
-        
     }
 
     private void AnimationTriggerEvent(AnimationTriggerType triggerType)
