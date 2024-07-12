@@ -1,5 +1,6 @@
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Enemy : MonoBehaviour, IThouchable, IEnemyMoveable
 {
@@ -10,7 +11,7 @@ public class Enemy : MonoBehaviour, IThouchable, IEnemyMoveable
     public EnemyWalkState WalkState { get; set; }
     public EnemyChaseState ChaseState { get; set; }
 
-    public float RandomMovememtSpeed = 1f;
+    public float MovememtSpeed = 1f;
     public float RandomMovementRange = 5f;
 
     private void Awake()
@@ -73,6 +74,7 @@ public class Enemy : MonoBehaviour, IThouchable, IEnemyMoveable
     public enum AnimationTriggerType
     {
         EnemyWalking,
-        EnemyFleeing
+        EnemyFleeing,
+        EnemyChasing
     }
 }

@@ -1,20 +1,26 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyWalkState : EnemyState
 {
+    private NavMeshAgent _navMeshAgent;
+    private Vector3 _currentPos;
     private Vector3 _targetPos;
     private Vector3 _direction;
     
     public EnemyWalkState(Enemy enemy, EnemyStateMachine enemyStateMachine) : base(enemy, enemyStateMachine)
     {
-        
+       
     }
 
     public override void EnterState()
     {
         base.EnterState();
+        _navMeshAgent = enemy.GetComponent<NavMeshAgent>();
+        _navMeshAgent.speed = enemy.MovememtSpeed;
 
-        _targetPos = GetRandomPointInCircle();
+        _targetPos = GetRandomPointOnNavMesh(enemy.transform.position, enemy.RandomMovementRange);
+        _navMeshAgent.SetDestination(_targetPos);
     }
 
     public override void ExitState()
@@ -26,13 +32,10 @@ public class EnemyWalkState : EnemyState
     {
         base.FrameUpdate();
 
-        _direction = (_targetPos - enemy.transform.position).normalized;
-        
-        enemy.MoveEnemy(_direction * enemy.RandomMovememtSpeed);
-
-        if ((enemy.transform.position - _targetPos).sqrMagnitude < 0.01f)
+        if (!_navMeshAgent.pathPending && _navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance)
         {
-            _targetPos = GetRandomPointInCircle();
+            _targetPos = GetRandomPointOnNavMesh(enemy.transform.position, enemy.RandomMovementRange);
+            _navMeshAgent.SetDestination(_targetPos);
         }
     }
 
@@ -41,9 +44,14 @@ public class EnemyWalkState : EnemyState
         base.PhysicUpdate();
     }
 
-    private Vector3 GetRandomPointInCircle()
+    private Vector3 GetRandomPointOnNavMesh(Vector3 center, float distance)
     {
-        var randomPoint2D = UnityEngine.Random.insideUnitCircle * enemy.RandomMovementRange;
-        return new Vector3(randomPoint2D.x, enemy.transform.position.y, randomPoint2D.y);
+        Vector3 randomPoint = center + Random.insideUnitSphere * distance;
+        NavMeshHit hit;
+        if (NavMesh.SamplePosition(randomPoint, out hit, distance, NavMesh.AllAreas))
+        {
+            return hit.position;
+        }
+        return center;
     }
 }
