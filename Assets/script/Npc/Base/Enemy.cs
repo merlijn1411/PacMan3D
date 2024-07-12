@@ -2,7 +2,7 @@ using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class Enemy : MonoBehaviour, IThouchable, IEnemyMoveable
+public class Enemy : MonoBehaviour, IThouchable, IEnemyMoveable, ITriggerCheckable
 {
     public Rigidbody RB { get; set; }
     public bool IsFacingRight { get; set; } = true;
@@ -13,6 +13,8 @@ public class Enemy : MonoBehaviour, IThouchable, IEnemyMoveable
 
     public float MovememtSpeed = 1f;
     public float RandomMovementRange = 5f;
+    
+    public bool isInRange { get; set; }
 
     private void Awake()
     {
@@ -76,5 +78,11 @@ public class Enemy : MonoBehaviour, IThouchable, IEnemyMoveable
         EnemyWalking,
         EnemyFleeing,
         EnemyChasing
+    }
+
+    
+    public void SetInRangeStatus(bool IsInRange)
+    {
+        isInRange = IsInRange;
     }
 }

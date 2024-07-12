@@ -2,5 +2,5 @@ public interface ITriggerCheckable
 {
     bool isInRange { get; set; }
 
-    void SetInRangeStatus(bool isInRange);
+    void SetInRangeStatus(bool IsInRange);
 }
