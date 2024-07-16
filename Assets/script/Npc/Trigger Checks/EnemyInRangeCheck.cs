@@ -2,27 +2,25 @@ using UnityEngine;
 
 public class EnemyInRangeCheck : MonoBehaviour
 {
-    public GameObject PlayerTarget { get; set; }
+    private string _tag = "Player";
     private Enemy _enemy;
 
     private void Awake()
     {
-        PlayerTarget = GameObject.FindGameObjectWithTag("Player");
-
         _enemy = GetComponentInParent<Enemy>();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider collider)
     {
-        if (other.gameObject == PlayerTarget)
+        if (collider.gameObject.CompareTag(_tag))
         {
             _enemy.SetInRangeStatus(true);
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider collider)
     {
-        if (other.gameObject == PlayerTarget)
+        if (collider.gameObject.CompareTag(_tag))
         {
             _enemy.SetInRangeStatus(false);
         }

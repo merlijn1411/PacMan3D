@@ -19,7 +19,7 @@ public class EnemyWalkState : EnemyState
         _navMeshAgent = enemy.GetComponent<NavMeshAgent>();
         _navMeshAgent.speed = enemy.MovememtSpeed;
 
-        _targetPos = GetRandomPointOnNavMesh(enemy.transform.position, enemy.RandomMovementRange);
+        _targetPos = GetRandomPointOnNavMesh(enemy.transform.position, enemy.RandomeMovementRange);
         _navMeshAgent.SetDestination(_targetPos);
     }
 
@@ -39,7 +39,7 @@ public class EnemyWalkState : EnemyState
 
         if (!_navMeshAgent.pathPending && _navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance)
         {
-            _targetPos = GetRandomPointOnNavMesh(enemy.transform.position, enemy.RandomMovementRange);
+            _targetPos = GetRandomPointOnNavMesh(enemy.transform.position, enemy.RandomeMovementRange);
             _navMeshAgent.SetDestination(_targetPos);
         }
     }
@@ -49,7 +49,7 @@ public class EnemyWalkState : EnemyState
         base.PhysicUpdate();
     }
 
-    private Vector3 GetRandomPointOnNavMesh(Vector3 center, float distance)
+    public Vector3 GetRandomPointOnNavMesh(Vector3 center, float distance)
     {
         Vector3 randomPoint = center + Random.insideUnitSphere * distance;
         NavMeshHit hit;

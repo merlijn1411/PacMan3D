@@ -1,6 +1,5 @@
 using UnityEngine;
 
-
 public class Enemy : MonoBehaviour, IChaseable, IEnemyMoveable, ITriggerCheckable
 {
     public Rigidbody RB { get; set; }
@@ -11,7 +10,7 @@ public class Enemy : MonoBehaviour, IChaseable, IEnemyMoveable, ITriggerCheckabl
     public EnemyChaseState ChaseState { get; set; }
 
     public float MovememtSpeed = 1f;
-    public float RandomMovementRange = 5f;
+    public float RandomeMovementRange = 5f;
     
     public bool IsChasing { get; set; }
     public bool IsColliding { get; set; }
@@ -34,6 +33,8 @@ public class Enemy : MonoBehaviour, IChaseable, IEnemyMoveable, ITriggerCheckabl
     private void Update()
     {
         StateMachine.currentEnemyState.FrameUpdate();
+        
+        Debug.Log(IsChasing);
     }
 
     private void FixedUpdate()
@@ -51,21 +52,16 @@ public class Enemy : MonoBehaviour, IChaseable, IEnemyMoveable, ITriggerCheckabl
         
     }
     
+    public void MoveEnemy(Vector3 velocity, float distance)
+    {
+        RB.velocity = velocity;
+        WalkState.GetRandomPointOnNavMesh(velocity, distance);
+    }
     public void MoveEnemy(Vector3 velocity)
     {
         RB.velocity = velocity;
-        ModelFaceRotator(velocity);
     }
-
-    public void ModelFaceRotator(Vector3 velocity)
-    {
-        if (velocity != Vector3.zero)
-        {
-            Quaternion targetRotation = Quaternion.LookRotation(new Vector3(velocity.x, 0f, velocity.z));
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 10f);
-        }
-    }
-
+    
     private void AnimationTriggerEvent(AnimationTriggerType triggerType)
     {
         StateMachine.currentEnemyState.AnimationTriggerEvent(triggerType);
