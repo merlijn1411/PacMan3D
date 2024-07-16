@@ -1,6 +1,8 @@
 public interface ITriggerCheckable
 {
-    bool isInRange { get; set; }
+    bool IsChasing { get; set; }
+    bool IsColliding { get; set; }
 
-    void SetInRangeStatus(bool IsInRange);
+    void SetInRangeStatus(bool isChasing);
+    void SetCollidingStatus(bool isColliding);
 }

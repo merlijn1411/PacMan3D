@@ -1,3 +1,5 @@
+using UnityEngine;
+
 public class EnemyChaseState : EnemyState
 {
     
@@ -9,6 +11,8 @@ public class EnemyChaseState : EnemyState
     public override void EnterState()
     {
         base.EnterState();
+        
+        Debug.Log("Hello");
     }
 
     public override void ExitState()
@@ -19,6 +23,8 @@ public class EnemyChaseState : EnemyState
     public override void FrameUpdate()
     {
         base.FrameUpdate();
+
+        enemy.MoveEnemy(Vector3 .zero);
     }
 
     public override void PhysicUpdate()

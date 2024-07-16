@@ -1,8 +1,7 @@
-using Unity.Mathematics;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-public class Enemy : MonoBehaviour, IThouchable, IEnemyMoveable, ITriggerCheckable
+
+public class Enemy : MonoBehaviour, IChaseable, IEnemyMoveable, ITriggerCheckable
 {
     public Rigidbody RB { get; set; }
     public bool IsFacingRight { get; set; } = true;
@@ -14,8 +13,8 @@ public class Enemy : MonoBehaviour, IThouchable, IEnemyMoveable, ITriggerCheckab
     public float MovememtSpeed = 1f;
     public float RandomMovementRange = 5f;
     
-    public bool isInRange { get; set; }
-
+    public bool IsChasing { get; set; }
+    public bool IsColliding { get; set; }
     private void Awake()
     {
         StateMachine = new EnemyStateMachine();
@@ -42,19 +41,18 @@ public class Enemy : MonoBehaviour, IThouchable, IEnemyMoveable, ITriggerCheckab
         StateMachine.currentEnemyState.PhysicUpdate();
     }
 
-    public void Touch()
+    public void Collide()
     {
         
     }
 
-    public void GetsEaten()
+    public void Ishasing()
     {
         
     }
     
     public void MoveEnemy(Vector3 velocity)
     {
-        velocity.y = 1.37f;
         RB.velocity = velocity;
         ModelFaceRotator(velocity);
     }
@@ -79,10 +77,16 @@ public class Enemy : MonoBehaviour, IThouchable, IEnemyMoveable, ITriggerCheckab
         EnemyFleeing,
         EnemyChasing
     }
+    
+    public void SetInRangeStatus(bool isChasing)
+    {
+        IsChasing = isChasing;
+    }
+
+    public void SetCollidingStatus(bool isColliding)
+    {
+        IsColliding = isColliding;
+    }
 
     
-    public void SetInRangeStatus(bool IsInRange)
-    {
-        isInRange = IsInRange;
-    }
 }

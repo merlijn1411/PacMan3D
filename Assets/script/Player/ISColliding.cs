@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class IsThouched : MonoBehaviour
+public class ISColliding : MonoBehaviour
 {
     public UnityEvent hasNoLves;
 

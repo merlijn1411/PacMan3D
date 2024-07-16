@@ -32,6 +32,11 @@ public class EnemyWalkState : EnemyState
     {
         base.FrameUpdate();
 
+        if (enemy.IsChasing)
+        {
+            enemy.StateMachine.ChangeState(enemy.ChaseState);
+        }
+
         if (!_navMeshAgent.pathPending && _navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance)
         {
             _targetPos = GetRandomPointOnNavMesh(enemy.transform.position, enemy.RandomMovementRange);
