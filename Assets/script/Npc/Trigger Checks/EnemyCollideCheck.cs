@@ -7,7 +7,6 @@ public class EnemyCollideCheck : MonoBehaviour
     
     private void Awake()
     {
-
         _enemy = GetComponentInParent<Enemy>();
     }
     private void OnTriggerEnter(Collider collider)

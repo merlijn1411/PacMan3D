@@ -3,10 +3,8 @@ using UnityEngine;
 public class Enemy : MonoBehaviour, IChaseable, IEnemyMoveable, ITriggerCheckable
 {
     public Rigidbody RB { get; set; }
-    public bool IsFacingRight { get; set; } = true;
-
     public EnemyStateMachine StateMachine { get; set; }
-    public EnemyWalkState WalkState { get; set; }
+    public EnemyPatrolState PatrolState { get; set; }
     public EnemyChaseState ChaseState { get; set; }
 
     public float MovememtSpeed = 1f;
@@ -18,16 +16,15 @@ public class Enemy : MonoBehaviour, IChaseable, IEnemyMoveable, ITriggerCheckabl
     {
         StateMachine = new EnemyStateMachine();
         
-        WalkState = new EnemyWalkState(this, StateMachine);
+        PatrolState = new EnemyPatrolState(this, StateMachine);
         ChaseState = new EnemyChaseState(this, StateMachine);
-        
     }
 
     private void Start()
     {
         RB = GetComponent<Rigidbody>();
         
-        StateMachine.Initialize(WalkState);
+        StateMachine.Initialize(PatrolState);
     }
 
     private void Update()
@@ -47,20 +44,17 @@ public class Enemy : MonoBehaviour, IChaseable, IEnemyMoveable, ITriggerCheckabl
         
     }
 
-    public void Ishasing()
+    public void ChaseTarget(Vector3 velocity)
     {
-        
+        RB.velocity = velocity;
     }
     
-    public void MoveEnemy(Vector3 velocity, float distance)
+    public void EnemyPatrolling(Vector3 velocity, float distance)
     {
         RB.velocity = velocity;
-        WalkState.GetRandomPointOnNavMesh(velocity, distance);
+        PatrolState.GetRandomPointOnNavMesh(velocity, distance);
     }
-    public void MoveEnemy(Vector3 velocity)
-    {
-        RB.velocity = velocity;
-    }
+    
     
     private void AnimationTriggerEvent(AnimationTriggerType triggerType)
     {
@@ -83,6 +77,4 @@ public class Enemy : MonoBehaviour, IChaseable, IEnemyMoveable, ITriggerCheckabl
     {
         IsColliding = isColliding;
     }
-
-    
 }

@@ -1,14 +1,13 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyWalkState : EnemyState
+public class EnemyPatrolState : EnemyState
 {
     private NavMeshAgent _navMeshAgent;
-    private Vector3 _currentPos;
+
     private Vector3 _targetPos;
-    private Vector3 _direction;
     
-    public EnemyWalkState(Enemy enemy, EnemyStateMachine enemyStateMachine) : base(enemy, enemyStateMachine)
+    public EnemyPatrolState(Enemy enemy, EnemyStateMachine enemyStateMachine) : base(enemy, enemyStateMachine)
     {
        
     }
