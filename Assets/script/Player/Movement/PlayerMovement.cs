@@ -6,8 +6,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float moveSpeed;
     [SerializeField] private float groundDrag;
 
-    
-
     [Header("Ground Check")]
     [SerializeField] private float playerHeight;
     [SerializeField] private LayerMask whatIsGround;
@@ -54,12 +52,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void MovePlayer()
     {
-        
         _moveDirection = orientation.forward * _verticalInput + orientation.right * _horizontalInput;
 
             _rb.AddForce(_moveDirection.normalized * (moveSpeed * 10f), ForceMode.Force);
-
-        
+            
     }
 
     private void SpeedControl()
