@@ -3,11 +3,11 @@ using UnityEngine;
 public class Teleporter : MonoBehaviour
 {
     [SerializeField] private Transform destination;
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.collider.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            other.collider.GetComponent<Transform>().position = destination.position;
+            other.GetComponent<Transform>().position = destination.position;
         }
     }
 
