@@ -1,28 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class npcPath : MonoBehaviour
 {
-    public NavMeshAgent Enemy;
-    public Transform target;
-    public float followRadius ;
-    public float wanderRadius ;
-    public float wanderTimer ;
+    [SerializeField] private NavMeshAgent Enemy;
+    [SerializeField] private Transform target;
+    [SerializeField] private float followRadius ;
+    [SerializeField] private float wanderRadius ;
+    [SerializeField] private float wanderTimer ;
 
-    private Vector3 startingPosition;
-    private float timer;
-
-    // Start is called before the first frame update
+   [SerializeField] private Vector3 startingPosition;
+   [SerializeField] private float timer;
+   
     void Start()
     {
         startingPosition = transform.position;
         timer = wanderTimer;
         Enemy.speed = 10f;
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         float distanceToTarget = Vector3.Distance(transform.position, target.position);
@@ -43,19 +39,15 @@ public class npcPath : MonoBehaviour
                 timer = 0;
             }
 
-            // Check if the current destination is invalid
             if (Enemy.pathStatus == NavMeshPathStatus.PathInvalid || Enemy.pathStatus == NavMeshPathStatus.PathPartial)
             {
-                // Reset the destination to a random point on the NavMesh
                 Vector3 newPos = GetRandomPointOnNavMesh(startingPosition, wanderRadius);
                 Enemy.SetDestination(newPos);
             }
         }
-
-        // Check if the agent has stopped moving
+        
         if (Enemy.remainingDistance <= Enemy.stoppingDistance && !Enemy.pathPending)
         {
-            // Reset the destination to a random point on the NavMesh
             Vector3 newPos = GetRandomPointOnNavMesh(startingPosition, wanderRadius);
             Enemy.SetDestination(newPos);
         }

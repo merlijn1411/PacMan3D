@@ -1,46 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.Events;
+
 
 public class KeepScore : MonoBehaviour
 {
-    //deze moet in de canvas: score 
-    private TMP_Text scoreField;
-    private int score = 0;
+    [SerializeField] private TMP_Text scoreField;
 
-    public GameObject WinScreen;
+    public UnityEvent hasAllPoints;
 
-    void Start()
+    private void Update()
     {
-        scoreField = GetComponent<TMP_Text>();
-        score = 0;  
-        scoreField.text = "" + score;
-        
+        GameObject[] points = GameObject.FindGameObjectsWithTag("Points");
+        scoreField.text = points.Length.ToString();
+        PointsLeft(points);
     }
 
-    void Update()
+    private void PointsLeft(GameObject[] points)
     {
-        GameObject[] points = 
-            GameObject.FindGameObjectsWithTag("Points");
-        scoreField.text = points.Length.ToString();
         if (points.Length == 0)
         {
-            YouWin();
+            hasAllPoints.Invoke();
         }
-    }
-
-    void YouWin()
-    {
-        Time.timeScale = 0f;
-        WinScreen.SetActive(true);
-    }
-
-    public void AddScore(int scoreScript)
-    {
-        score += scoreScript;
-        scoreField.text = "" + score;
-        
     }
 }
