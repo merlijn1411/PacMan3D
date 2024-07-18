@@ -30,7 +30,11 @@ public class EnemyChaseState : EnemyState
         base.FrameUpdate();
 
         _navMeshAgent.SetDestination(_playerTransform.position);
-        Debug.Log(_playerTransform.position);
+
+        if (!enemy.IsChasing)
+        {
+            enemyStateMachine.ChangeState(enemy.PatrolState);
+        }
     }
 
     public override void PhysicUpdate()
