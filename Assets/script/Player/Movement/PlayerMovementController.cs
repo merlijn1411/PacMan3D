@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
@@ -21,7 +20,7 @@ public class PlayerMovementController : MonoBehaviour
 
 	private CharacterController _characterController;
 
-	void Start()
+	private void Start()
 	{
 		_characterController = GetComponent<CharacterController>();
 
@@ -29,7 +28,7 @@ public class PlayerMovementController : MonoBehaviour
 		// Cursor.visible = false;
 	}
 
-	void Update()
+	private void Update()
 	{
 		#region Handles Movement
 		var forward = transform.TransformDirection(Vector3.forward);
