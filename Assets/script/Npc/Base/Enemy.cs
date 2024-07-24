@@ -30,8 +30,6 @@ public class Enemy : MonoBehaviour, IChaseable, IEnemyMoveable, ITriggerCheckabl
     private void Update()
     {
         StateMachine.currentEnemyState.FrameUpdate();
-        
-        Debug.Log(IsChasing);
     }
 
     private void FixedUpdate()
@@ -65,7 +63,7 @@ public class Enemy : MonoBehaviour, IChaseable, IEnemyMoveable, ITriggerCheckabl
     {
         EnemyWalking,
         EnemyFleeing,
-        EnemyChasing
+        EnemyScared
     }
     
     public void SetInRangeStatus(bool isChasing)

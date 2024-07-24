@@ -46508,6 +46508,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3916116569049314567, guid: fb1b93fb0802bb24ebe7b1afb6f417fb, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3916116569049314567, guid: fb1b93fb0802bb24ebe7b1afb6f417fb, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3963945042586063606, guid: fb1b93fb0802bb24ebe7b1afb6f417fb, type: 3}
       propertyPath: m_Name
       value: Blinky
@@ -46559,8 +46567,43 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5840996299320733979, guid: fb1b93fb0802bb24ebe7b1afb6f417fb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1596934938}
   m_SourcePrefab: {fileID: 100100000, guid: fb1b93fb0802bb24ebe7b1afb6f417fb, type: 3}
+--- !u!1 &1596934937 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5840996299320733979, guid: fb1b93fb0802bb24ebe7b1afb6f417fb, type: 3}
+  m_PrefabInstance: {fileID: 1596934936}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1596934938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596934937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d2d1d4429e575345af8fd20386a4569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasNoLves:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 562040271}
+        m_TargetAssemblyTypeName: PrestationChecker, Assembly-CSharp
+        m_MethodName: Loose
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1603423205
 GameObject:
   m_ObjectHideFlags: 0
@@ -67015,6 +67058,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 855206281879058055, guid: 0d768efbc801cfb4c9a0ffd1c62685c8, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4229403744194341984, guid: 0d768efbc801cfb4c9a0ffd1c62685c8, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -67151,7 +67198,16 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 0.21
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8567615289602176346, guid: 0d768efbc801cfb4c9a0ffd1c62685c8, type: 3}
+      propertyPath: hasNoLves.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 562040271}
+    - target: {fileID: 8567615289602176346, guid: 0d768efbc801cfb4c9a0ffd1c62685c8, type: 3}
+      propertyPath: hasNoLves.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Loose
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8567615289602176346, guid: 0d768efbc801cfb4c9a0ffd1c62685c8, type: 3}
     m_RemovedGameObjects:
     - {fileID: 5810572199998780193, guid: 0d768efbc801cfb4c9a0ffd1c62685c8, type: 3}
     m_AddedGameObjects: []
