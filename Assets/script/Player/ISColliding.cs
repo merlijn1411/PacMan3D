@@ -1,13 +1,13 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class IsThouched : MonoBehaviour
+public class ISColliding : MonoBehaviour
 {
     public UnityEvent hasNoLves;
-
+    
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Ghost"))
+        if (other.gameObject.CompareTag("Player"))
         {
             hasNoLves.Invoke();
         }
