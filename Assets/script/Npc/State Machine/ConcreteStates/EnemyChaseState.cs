@@ -16,6 +16,7 @@ public class EnemyChaseState : EnemyState
         base.EnterState();
         _navMeshAgent = enemy.GetComponent<NavMeshAgent>();
         _navMeshAgent.ResetPath();
+        _navMeshAgent.updateRotation = true;
         
         _playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
     }
@@ -33,7 +34,7 @@ public class EnemyChaseState : EnemyState
 
         if (!enemy.IsChasing)
         {
-            enemyStateMachine.ChangeState(enemy.PatrolState);
+            enemyStateMachine.ChangeState(enemy.WanderingState);
         }
     }
 

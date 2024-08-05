@@ -4,11 +4,13 @@ public class Enemy : MonoBehaviour, IChaseable, IEnemyMoveable, ITriggerCheckabl
 {
     public Rigidbody RB { get; set; }
     public EnemyStateMachine StateMachine { get; set; }
+    public EnemyWanderingState WanderingState { get; set; }
     public EnemyPatrolState PatrolState { get; set; }
     public EnemyChaseState ChaseState { get; set; }
 
     public float MovememtSpeed = 1f;
     public float RandomeMovementRange = 5f;
+    public Waypoint GhostWaypoint;
     
     public bool IsChasing { get; set; }
     public bool IsColliding { get; set; }
@@ -16,8 +18,9 @@ public class Enemy : MonoBehaviour, IChaseable, IEnemyMoveable, ITriggerCheckabl
     {
         StateMachine = new EnemyStateMachine();
         
-        PatrolState = new EnemyPatrolState(this, StateMachine);
+        WanderingState = new EnemyWanderingState(this, StateMachine);
         ChaseState = new EnemyChaseState(this, StateMachine);
+        PatrolState = new EnemyPatrolState(this, StateMachine);
     }
 
     private void Start()
@@ -47,12 +50,19 @@ public class Enemy : MonoBehaviour, IChaseable, IEnemyMoveable, ITriggerCheckabl
         RB.velocity = velocity;
     }
     
-    public void EnemyPatrolling(Vector3 velocity, float distance)
+    public void EnemyWandering(Vector3 velocity, float distance)
     {
         RB.velocity = velocity;
-        PatrolState.GetRandomPointOnNavMesh(velocity, distance);
+        WanderingState.GetRandomPointForNavMesh(velocity, distance);
     }
+
+    public void InstantlyTurn(Vector3 destination) {
+        if ((destination - transform.position).magnitude < 0.1f) return; 
     
+        var direction = (destination - transform.position).normalized;
+        var  qDir= Quaternion.LookRotation(direction);
+        transform.rotation = Quaternion.Slerp(transform.rotation, qDir, Time.deltaTime * 20f);
+    }
     
     private void AnimationTriggerEvent(AnimationTriggerType triggerType)
     {
