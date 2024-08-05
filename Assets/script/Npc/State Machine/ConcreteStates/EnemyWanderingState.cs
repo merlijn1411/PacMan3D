@@ -17,8 +17,9 @@ public class EnemyWanderingState : EnemyState
         base.EnterState();
         _navMeshAgent = enemy.GetComponent<NavMeshAgent>();
         _navMeshAgent.speed = enemy.MovememtSpeed;
+        _navMeshAgent.updateRotation = false;
 
-        _targetPos = GetRandomPointOnNavMesh(enemy.transform.position, enemy.RandomeMovementRange);
+        _targetPos = GetRandomPointForNavMesh(enemy.transform.position, enemy.RandomeMovementRange);
         _navMeshAgent.SetDestination(_targetPos);
     }
 
@@ -36,11 +37,9 @@ public class EnemyWanderingState : EnemyState
             enemy.StateMachine.ChangeState(enemy.ChaseState);
         }
 
-        if (!_navMeshAgent.pathPending && _navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance)
-        {
-            _targetPos = GetRandomPointOnNavMesh(enemy.transform.position, enemy.RandomeMovementRange);
-            _navMeshAgent.SetDestination(_targetPos);
-        }
+        if (_navMeshAgent.pathPending || !(_navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance)) return;
+        _targetPos = GetRandomPointForNavMesh(enemy.transform.position, enemy.RandomeMovementRange);
+        enemy.InstantlyTurn(_targetPos);
     }
 
     public override void PhysicUpdate()
@@ -48,14 +47,10 @@ public class EnemyWanderingState : EnemyState
         base.PhysicUpdate();
     }
 
-    public Vector3 GetRandomPointOnNavMesh(Vector3 center, float distance)
+    public Vector3 GetRandomPointForNavMesh(Vector3 center, float distance)
     {
         Vector3 randomPoint = center + Random.insideUnitSphere * distance;
         NavMeshHit hit;
-        if (NavMesh.SamplePosition(randomPoint, out hit, distance, NavMesh.AllAreas))
-        {
-            return hit.position;
-        }
-        return center;
+        return NavMesh.SamplePosition(randomPoint, out hit, distance, NavMesh.AllAreas) ? hit.position : center;
     }
 }

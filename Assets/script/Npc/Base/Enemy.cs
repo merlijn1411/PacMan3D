@@ -53,13 +53,15 @@ public class Enemy : MonoBehaviour, IChaseable, IEnemyMoveable, ITriggerCheckabl
     public void EnemyWandering(Vector3 velocity, float distance)
     {
         RB.velocity = velocity;
-        WanderingState.GetRandomPointOnNavMesh(velocity, distance);
+        WanderingState.GetRandomPointForNavMesh(velocity, distance);
     }
 
-    public void EnemyPatrolling(Vector3 velocity)
-    {
-        RB.velocity = velocity;
-        //PatrolState.EnemyTowardNextPos();
+    public void InstantlyTurn(Vector3 destination) {
+        if ((destination - transform.position).magnitude < 0.1f) return; 
+    
+        var direction = (destination - transform.position).normalized;
+        var  qDir= Quaternion.LookRotation(direction);
+        transform.rotation = Quaternion.Slerp(transform.rotation, qDir, Time.deltaTime * 20f);
     }
     
     private void AnimationTriggerEvent(AnimationTriggerType triggerType)
