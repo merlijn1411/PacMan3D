@@ -20,6 +20,7 @@ public class EnemyWanderingState : EnemyState
         _navMeshAgent.updateRotation = false;
 
         _targetPos = GetRandomPointForNavMesh(enemy.transform.position, enemy.RandomeMovementRange);
+        enemy.InstantlyTurn(_targetPos);
         _navMeshAgent.SetDestination(_targetPos);
     }
 
@@ -36,9 +37,13 @@ public class EnemyWanderingState : EnemyState
         {
             enemy.StateMachine.ChangeState(enemy.ChaseState);
         }
-
-        if (_navMeshAgent.pathPending || !(_navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance)) return;
-        _targetPos = GetRandomPointForNavMesh(enemy.transform.position, enemy.RandomeMovementRange);
+        
+        if (!_navMeshAgent.pathPending && _navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance)
+        {
+            _targetPos = GetRandomPointForNavMesh(enemy.transform.position, enemy.RandomeMovementRange);
+            _navMeshAgent.SetDestination(_targetPos);
+        }
+        
         enemy.InstantlyTurn(_targetPos);
     }
 
@@ -50,6 +55,7 @@ public class EnemyWanderingState : EnemyState
     public Vector3 GetRandomPointForNavMesh(Vector3 center, float distance)
     {
         Vector3 randomPoint = center + Random.insideUnitSphere * distance;
+        randomPoint.y = 0;
         NavMeshHit hit;
         return NavMesh.SamplePosition(randomPoint, out hit, distance, NavMesh.AllAreas) ? hit.position : center;
     }

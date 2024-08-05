@@ -46544,6 +46544,10 @@ PrefabInstance:
       propertyPath: GhostWaypoint
       value: 
       objectReference: {fileID: 1721263148}
+    - target: {fileID: -7464345435045484981, guid: fb1b93fb0802bb24ebe7b1afb6f417fb, type: 3}
+      propertyPath: RandomeMovementRange
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 3916116569049314567, guid: fb1b93fb0802bb24ebe7b1afb6f417fb, type: 3}
       propertyPath: m_Enabled
       value: 1
