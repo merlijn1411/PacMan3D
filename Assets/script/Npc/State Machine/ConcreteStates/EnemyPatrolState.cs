@@ -4,58 +4,84 @@ using UnityEngine.AI;
 public class EnemyPatrolState : EnemyState
 {
     private NavMeshAgent _navMeshAgent;
-
-    private Vector3 _targetPos;
+    public Vector3 CurrentPointPosition { get; private set; }
+    private int _currentWaypointIndex;
     
     public EnemyPatrolState(Enemy enemy, EnemyStateMachine enemyStateMachine) : base(enemy, enemyStateMachine)
     {
-       
     }
 
     public override void EnterState()
     {
         base.EnterState();
         _navMeshAgent = enemy.GetComponent<NavMeshAgent>();
+        _navMeshAgent.updateRotation = false;
         _navMeshAgent.speed = enemy.MovememtSpeed;
-
-        _targetPos = GetRandomPointOnNavMesh(enemy.transform.position, enemy.RandomeMovementRange);
-        _navMeshAgent.SetDestination(_targetPos);
+        
     }
 
     public override void ExitState()
     {
-        base.ExitState();
+        base.ExitState();   
     }
 
     public override void FrameUpdate()
     {
         base.FrameUpdate();
-
-        if (enemy.IsChasing)
+        CurrentPointPosition = enemy.GhostWaypoint.GetWaypointPosition(_currentWaypointIndex); 
+        EnemyMoveAndRotateToPoint();
+        if (CurrentPointPositionReached())
         {
-            enemy.StateMachine.ChangeState(enemy.ChaseState);
-        }
-
-        if (!_navMeshAgent.pathPending && _navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance)
-        {
-            _targetPos = GetRandomPointOnNavMesh(enemy.transform.position, enemy.RandomeMovementRange);
-            _navMeshAgent.SetDestination(_targetPos);
+            UpdateCurrentPointIndex();
         }
     }
 
+    private void EnemyMoveAndRotateToPoint()
+    {
+        enemy.transform.position = Vector3.MoveTowards(enemy.transform.position, CurrentPointPosition, _navMeshAgent.speed * Time.deltaTime);
+        InstantlyTurn(CurrentPointPosition);
+    }
+    
+    private void InstantlyTurn(Vector3 destination) {
+        //When on target -> dont rotate!
+        if ((destination - enemy.transform.position).magnitude < 0.1f) return; 
+    
+        var direction = (destination - enemy.transform.position).normalized;
+        var  qDir= Quaternion.LookRotation(direction);
+        enemy.transform.rotation = Quaternion.Slerp(enemy.transform.rotation, qDir, Time.deltaTime * 20f);
+    }
+    
+    private bool CurrentPointPositionReached()
+    {
+        var distanceToNextPointPosition = (enemy.transform.position - CurrentPointPosition).magnitude;
+        Mathf.Abs(distanceToNextPointPosition);
+        if (distanceToNextPointPosition < 1f)
+        {
+            CurrentPointPosition = enemy.transform.position;
+            return true;
+        }
+        return false;
+    }
+
+    private void UpdateCurrentPointIndex()
+    {
+        var lastWaypointIndex = enemy.GhostWaypoint.waypoints.Length - 1;
+        if(_currentWaypointIndex == lastWaypointIndex)
+        {
+            _currentWaypointIndex = 0;
+        }
+        else
+        {
+            _currentWaypointIndex++;
+            CurrentPointPosition = enemy.GhostWaypoint.waypoints[_currentWaypointIndex];
+        }
+    }
+    
     public override void PhysicUpdate()
     {
         base.PhysicUpdate();
     }
-
-    public Vector3 GetRandomPointOnNavMesh(Vector3 center, float distance)
-    {
-        Vector3 randomPoint = center + Random.insideUnitSphere * distance;
-        NavMeshHit hit;
-        if (NavMesh.SamplePosition(randomPoint, out hit, distance, NavMesh.AllAreas))
-        {
-            return hit.position;
-        }
-        return center;
-    }
+    
+    
 }
+

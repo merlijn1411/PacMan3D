@@ -33,7 +33,7 @@ public class EnemyChaseState : EnemyState
 
         if (!enemy.IsChasing)
         {
-            enemyStateMachine.ChangeState(enemy.PatrolState);
+            enemyStateMachine.ChangeState(enemy.WanderingState);
         }
     }
 
