@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
@@ -5,6 +6,8 @@ public class PlayerMovementController : MonoBehaviour
 {
 	[Header("FPS Attributes")]
 	[SerializeField] private Camera playerCamera;
+
+	[SerializeField] private GameObject playerModel;
 	[SerializeField] private float walkSpeed;
 	[SerializeField] private float runSpeed;
 	[SerializeField] private float jumpForce;
@@ -76,5 +79,11 @@ public class PlayerMovementController : MonoBehaviour
 		}
 
 		#endregion
+	}
+
+	private void FixedUpdate()
+	{
+		playerModel.transform.position = gameObject.transform.position;
+		playerModel.transform.rotation = Quaternion.Euler(0, transform.rotation.y + 180, 0);
 	}
 }
